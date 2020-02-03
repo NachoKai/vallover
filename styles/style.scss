@@ -5,6 +5,7 @@
     -ms-user-select: none;
     -webkit-user-drag: none;
     transition: all 0.2s ease;
+    font-family: 'Roboto', sans-serif;
 }
 
 #container {
@@ -37,7 +38,8 @@ footer {
 
 .summary {
     padding-bottom: 5%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
