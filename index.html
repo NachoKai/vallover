@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Va a llover?</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" sizes="16x16 24x24 36x36 48x48">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/429b57eee3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body onload="displayImg()">
+
+    <div class="container-fluid" id="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Va a llover?</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="img-div"></div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <h3 class="text-center">Temperatura</h3>
+                <h3 class="text-center temperature"><span class="temp-value"></span></h3>ºC
+            </div>
+
+            <div class="col-sm-4">
+                <h3 class="text-center">Prob. de precipitaciones</h3>
+                <h3 id="rainProb" class="text-center rainChance"></h3>%
+            </div>
+
+            <div class="col-sm-4">
+                <h3 class="text-center">Porcentaje de humedad</h3>
+                <h3 class="text-center humidity"></h3>%
+            </div>
+
+            <div class="col-sm-12">
+                <h3 class="text-center summary"></h3>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <footer>
+                    <a href="https://github.com/NachoKai" class="link">Nacho Caiafa </a> &copy; <span
+                        id="current-year"></span>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <script src="https://raw.githubusercontent.com/darkskyapp/skycons/master/skycons.js"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>

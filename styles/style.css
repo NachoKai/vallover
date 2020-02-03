@@ -1,0 +1,19 @@
+#container {
+  text-align: center;
+}
+
+#virgencita {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  padding: 5%;
+}
+
+footer {
+  text-align: left;
+}
+
+footer a {
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */
