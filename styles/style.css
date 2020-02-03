@@ -82,4 +82,8 @@ footer a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+
+#img-div {
+  min-height: 500px;
+}
 /*# sourceMappingURL=style.css.map */
