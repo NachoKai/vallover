@@ -93,7 +93,7 @@ footer a {
 }
 
 .temp-value {
-  font-size: 4.5rem;
+  font-size: 6rem;
 }
 
 .data {
@@ -101,5 +101,10 @@ footer a {
   position: relative;
   top: 10px;
   font-weight: bold;
+}
+
+.temperature {
+  text-align: center;
+  line-height: 1;
 }
 /*# sourceMappingURL=style.css.map */
