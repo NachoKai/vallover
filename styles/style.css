@@ -10,7 +10,7 @@
 
 #container {
   text-align: center;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 #virgencita {
@@ -30,25 +30,6 @@ footer a {
   color: #000;
 }
 
-.columna {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 1.1rem;
-}
-
-.columna h3 {
-  font-size: 1.5rem;
-}
-
-.columna h4 {
-  font-size: 1.4rem;
-}
-
 .fila {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,15 +43,23 @@ footer a {
           justify-content: center;
 }
 
+.summary {
+  padding-bottom: 5%;
+  font-size: 1.3rem;
+}
+
 @media only screen and (max-width: 600px) {
-  .columna {
-    font-size: 0.8rem;
+  #tabla {
+    font-size: 1.1rem;
   }
-  .columna h3 {
-    font-size: 1.3rem;
+  #tabla .data {
+    font-size: 1.1rem;
   }
-  .columna h4 {
-    font-size: 1.2rem;
+  #tabla h3 {
+    font-size: 1.1rem;
+  }
+  #tabla h4 {
+    font-size: 1.1rem;
   }
 }
 
@@ -83,7 +72,36 @@ footer a {
           justify-content: space-evenly;
 }
 
-#img-div {
-  min-height: 500px;
+#tabla td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#tabla {
+  font-size: 1.3rem;
+}
+
+#tabla .data {
+  font-size: 1.3rem;
+}
+
+#tabla h3 {
+  font-size: 1.3rem;
+}
+
+#tabla h4 {
+  font-size: 1.3rem;
+}
+
+.temp-value {
+  font-size: 4rem;
+}
+
+.data {
+  font-size: 1.5rem;
+  position: relative;
+  top: 10px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

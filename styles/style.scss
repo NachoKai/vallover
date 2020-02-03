@@ -9,7 +9,7 @@
 
 #container {
     text-align: center;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 #virgencita {
@@ -29,45 +29,69 @@ footer {
     }
 }
 
-.columna {
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.4rem;
-    }
-
-    display: flex;
-    flex-direction: column;
-    font-size: 1.1rem;
-}
-
 .fila {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+.summary {
+    padding-bottom: 5%;
+    font-size: 1.3rem;
+}
+
 @media only screen and (max-width: 600px) {
-    .columna {
+    #tabla {
+        .data {
+            font-size: 1.1rem;
+        }
+
         h3 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
 
         h4 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 }
 
-#info{
+#info {
     display: flex;
     justify-content: space-evenly;
 }
 
-#img-div{
-    min-height: 500px;
+#tabla {
+    td {
+        display: flex;
+    }
+}
+
+#tabla {
+    .data {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    font-size: 1.3rem;
+}
+
+.temp-value {
+    font-size: 4rem;
+}
+
+.data {
+    font-size: 1.5rem;
+    position: relative;
+    top: 10px;
+    font-weight: bold;
 }
