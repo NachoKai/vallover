@@ -88,6 +88,10 @@ footer a {
   font-size: 1.3rem;
 }
 
+#tabla td {
+  padding: 1%;
+}
+
 .temp-value {
   font-size: 4.5rem;
 }
