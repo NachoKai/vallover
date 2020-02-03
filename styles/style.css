@@ -10,10 +10,55 @@
 }
 
 footer {
+  font-size: 0.9rem;
   text-align: left;
 }
 
 footer a {
   color: #000;
+}
+
+.columna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.columna h3 {
+  font-size: 1.5rem;
+}
+
+.columna h4 {
+  font-size: 1.4rem;
+}
+
+.fila {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .columna {
+    font-size: 0.8rem;
+  }
+  .columna h3 {
+    font-size: 1.3rem;
+  }
+  .columna h4 {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
