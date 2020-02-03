@@ -41,12 +41,16 @@ $(document).ready(() => {
 
         tempF = Math.round(data.currently.temperature);
         tempC = Math.round((5 / 9) * (tempF - 32));
+        visib = (data.currently.visibility) * 1.609;
 
         setTemp();
 
         $(".humidity").html(data.currently.humidity);
         $(".summary").html(data.currently.summary);
         $(".rainChance").html(data.currently.precipProbability * 100);
+        $(".pressure").html(data.currently.pressure);
+        $(".visibility").html(visib);
+        $(".windSpeed").html(data.currently.windSpeed);
     };
 
     getLocation();

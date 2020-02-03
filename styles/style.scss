@@ -42,14 +42,9 @@ footer {
 
 @media only screen and (max-width: 600px) {
     #tabla {
-        .data {
-            font-size: 1.1rem;
-        }
 
-        h3 {
-            font-size: 1.1rem;
-        }
-
+        .data,
+        h3,
         h4 {
             font-size: 1.1rem;
         }
@@ -70,23 +65,19 @@ footer {
 }
 
 #tabla {
-    .data {
-        font-size: 1.3rem;
-    }
+    display: flex;
+    line-height: 1.1;
+    font-size: 1.3rem;
 
-    h3 {
-        font-size: 1.3rem;
-    }
-
+    .data,
+    h3,
     h4 {
         font-size: 1.3rem;
     }
-
-    font-size: 1.3rem;
 }
 
 .temp-value {
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 
 .data {

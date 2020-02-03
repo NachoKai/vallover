@@ -52,12 +52,8 @@ footer a {
   #tabla {
     font-size: 1.1rem;
   }
-  #tabla .data {
-    font-size: 1.1rem;
-  }
-  #tabla h3 {
-    font-size: 1.1rem;
-  }
+  #tabla .data,
+  #tabla h3,
   #tabla h4 {
     font-size: 1.1rem;
   }
@@ -79,23 +75,21 @@ footer a {
 }
 
 #tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.1;
   font-size: 1.3rem;
 }
 
-#tabla .data {
-  font-size: 1.3rem;
-}
-
-#tabla h3 {
-  font-size: 1.3rem;
-}
-
+#tabla .data,
+#tabla h3,
 #tabla h4 {
   font-size: 1.3rem;
 }
 
 .temp-value {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .data {
