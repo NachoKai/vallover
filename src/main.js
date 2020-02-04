@@ -43,7 +43,7 @@ $(document).ready(() => {
 
         setTemp();
 
-        $(".humidity").html(data.currently.humidity);
+        $(".humidity").html(data.currently.humidity * 100);
         $(".summary").html(data.currently.summary);
         $(".rainChance").html(data.currently.precipProbability * 100);
         $(".pressure").html(data.currently.pressure);
