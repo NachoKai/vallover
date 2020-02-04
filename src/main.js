@@ -43,7 +43,7 @@ $(document).ready(() => {
 
         setTemp();
 
-        $(".humidity").html(data.currently.humidity * 100);
+        $(".humidity").html((data.currently.humidity * 100).toFixed(0));
         $(".summary").html(data.currently.summary);
         $(".rainChance").html(data.currently.precipProbability * 100);
         $(".pressure").html(data.currently.pressure);
@@ -74,5 +74,18 @@ function virgencita() {
 };
 
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
+
+function showInfo() {
+    Swal.fire(
+        "Info",
+        `
+<b style="color: #1c7ed6;">Azul</b> : Buen tiempo <br>
+<b style="color: #5f3dc4;">Violeta</b> : Inestable<br>
+<b style="color: #cc5de8;">Rosa</b> : Lluvioso<br>
+
+`,
+        "info"
+    );
+}
 
 // https://darksky.net/dev/docs
