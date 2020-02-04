@@ -75,4 +75,3 @@ function virgencita() {
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
 // https://darksky.net/dev/docs
-// https://api.darksky.net/forecast/2a7394813a0403820775ff64cbec063f/-34.6800128,-58.4998912?lang=es
