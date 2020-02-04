@@ -55,7 +55,7 @@ footer {
 
 .summary {
     padding-bottom: 5%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -96,7 +96,11 @@ footer {
     }
 
     td {
-        padding: 1%;
+        padding: 0%;
+    }
+
+    p {
+        font-weight: bold;
     }
 }
 

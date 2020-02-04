@@ -49,6 +49,7 @@ $(document).ready(() => {
         $(".pressure").html(data.currently.pressure);
         $(".visibility").html(visib);
         $(".windSpeed").html(data.currently.windSpeed);
+        $(".timezone").html(data.timezone.replace(/_/g, " "));
     };
 
     getLocation();
