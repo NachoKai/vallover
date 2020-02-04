@@ -9,6 +9,10 @@ $(document).ready(() => {
         } else {
             alert('Disculpa, tu navegador no soporta geolocalización.');
         }
+
+        navigator.geolocation.getCurrentPosition(getLocationWeather, () =>
+            alert("no funciona si bloqueás la localización")
+        )
     }
 
     function getLocationWeather(position) {
