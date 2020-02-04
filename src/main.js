@@ -62,7 +62,7 @@ function displayImg() {
 };
 
 function virgencita() {
-    let prob = document.getElementById("rainProb").innerText;
+    let prob = document.getElementById("humidity").innerText;
     for (i = 0; i <= prob; i++) {
         (i => {
             setTimeout(() => {
