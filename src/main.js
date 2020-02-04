@@ -1,7 +1,5 @@
 $(document).ready(() => {
-
     let weatherURL = "https://api.forecast.io/forecast/2a7394813a0403820775ff64cbec063f/";
-    let tempInF = true;
 
     function getLocation() {
         if (navigator.geolocation) {
