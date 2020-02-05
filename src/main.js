@@ -27,7 +27,7 @@ $(document).ready(() => {
             }
         });
     };
-    
+
     let tempF;
     let tempC;
 
@@ -56,7 +56,7 @@ $(document).ready(() => {
 });
 
 function displayImg() {
-    let imagesArray = ["fragata.png", "hipocampo.png", "virgencita.png", "lobo_marino.png"];
+    let imagesArray = ["fragata.png", "hipocampo.png", "virgencita.png", "lobo_marino.png", "delfines.png"];
     let random = imagesArray[Math.floor(Math.random() * imagesArray.length)];
     document.getElementById("img-div").innerHTML = `<img id="virgencita" src="img/${random}" onload="virgencita()" onclick="displayImg()">`;
 };
@@ -79,12 +79,12 @@ function showInfo() {
     Swal.fire(
         "Info",
         `
+<img src="img/meme.jpg" height="250" width="250"><br><br>
 <b style="color: #1c7ed6;">Azul</b> : Buen tiempo <br>
 <b style="color: #5f3dc4;">Violeta</b> : Inestable<br>
-<b style="color: #cc5de8;">Rosa</b> : Lluvioso<br>
-
+<b style="color: #cc5de8;">Rosa</b> : Lluvioso
 `,
-        "info"
+        ""
     );
 }
 
