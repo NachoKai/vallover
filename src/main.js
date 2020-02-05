@@ -81,7 +81,7 @@ function showInfo() {
         `
 <b style="color: #1c7ed6;">Azul</b> : Buen tiempo <br>
 <b style="color: #5f3dc4;">Violeta</b> : Inestable<br>
-<b style="color: #cc5de8;">Rosa</b> : Va a llover<br>
+<b style="color: #cc5de8;">Rosa</b> : Lluvioso<br>
 
 `,
         "info"
