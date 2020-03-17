@@ -1,92 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+	<head>
+		<title>Va a llover?</title>
+		<link
+			rel="icon"
+			type="image/vnd.microsoft.icon"
+			href="img/favicon.ico"
+			sizes="16x16 24x24 36x36 48x48"
+		/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<script src="https://kit.fontawesome.com/429b57eee3.js" crossorigin="anonymous"></script>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+	</head>
 
-<head>
-    <title>Va a llover?</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" sizes="16x16 24x24 36x36 48x48">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/429b57eee3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-</head>
+	<body onload="displayImg()">
+		<div class="container-fluid" id="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Va a llover?</h2>
+				</div>
+				<div class="col-sm-12">
+					<div id="img-div"></div>
+				</div>
+			</div>
 
-<body onload="displayImg()">
+			<div class="row">
+				<div class="col-sm-6" id="temp">
+					<div class="fila">
+						<h4 class="text-center temperature"><span class="temp-value"></span></h4>
+						<div class="data">ºC</div>
+					</div>
+					<h4 class="text-center summary"></h4>
+				</div>
 
-    <div class="container-fluid" id="container">
+				<div class="col-sm-6">
+					<table id="tabla">
+						<tr>
+							<td>
+								<h4 class="text-center">Humedad:</h4>
+								<p class="text-center humidity" id="humidity"></p>
+								%
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4 class="text-center">Presión:</h4>
+								<p class="text-center pressure"></p>
+								mbar
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4 class="text-center">Visibilidad:</h4>
+								<p class="text-center visibility"></p>
+								km
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4 class="text-center">Viento:</h4>
+								<p class="text-center windSpeed"></p>
+								km/h
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Va a llover?</h2>
-            </div>
-            <div class="col-sm-12">
-                <div id="img-div"></div>
-            </div>
-        </div>
+			<div class="row">
+				<div class="col-sm-6">
+					<button type="button" class="btn btn-outline-info" onclick="showInfo()">
+						Info
+					</button>
+				</div>
+				<div class="col-sm-6">
+					<footer>
+						<a href="https://github.com/NachoKai" class="link">Nacho Caiafa </a> &copy;
+						<span id="current-year"></span>
+					</footer>
+				</div>
+			</div>
+		</div>
 
-        <div class="row">
-            <div class="col-sm-6" id="temp">
-                <div class="fila">
-                    <h4 class="text-center temperature"><span class="temp-value"></span></h4>
-                    <div class="data">ºC</div>
-                </div>
-                <h4 class="text-center summary"></h4>
-            </div>
-
-            <div class="col-sm-6">
-
-                <table id="tabla">
-                    <tr>
-                        <td>
-                            <h4 class="text-center">Humedad: </h4>
-                            <p class="text-center humidity" id="humidity"></p>%
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4 class="text-center">Presión: </h4>
-                            <p class="text-center pressure"></p> mbar
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4 class="text-center">Visibilidad: </h4>
-                            <p class="text-center visibility"></p> km
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4 class="text-center">Viento: </h4>
-                            <p class="text-center windSpeed"></p> km/h
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <button type="button" class="btn btn-outline-info" onclick="showInfo()">Info</button>
-            </div>
-            <div class="col-sm-6">
-                <footer>
-                    <a href="https://github.com/NachoKai" class="link">Nacho Caiafa </a> &copy;
-                    <span id="current-year"></span>
-                </footer>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-    </script>
-    <script src="https://raw.githubusercontent.com/darkskyapp/skycons/master/skycons.js"></script>
-    <script src="src/main.js"></script>
-</body>
-
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.js"
+			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://raw.githubusercontent.com/darkskyapp/skycons/master/skycons.js"></script>
+		<script src="src/main.js"></script>
+	</body>
 </html>

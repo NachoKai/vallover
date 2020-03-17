@@ -1,0 +1,138 @@
+* {
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+#container {
+  text-align: center;
+  max-width: 600px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#virgencita {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  padding: 5%;
+}
+
+#temp {
+  max-width: 200px;
+}
+
+footer {
+  font-size: 0.9rem;
+  text-align: right;
+  padding: 8px;
+}
+
+footer a {
+  color: #000;
+}
+
+.fila {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.summary {
+  padding-bottom: 5%;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  #tabla {
+    font-size: 1.1rem;
+  }
+  #tabla .data,
+  #tabla h3,
+  #tabla h4 {
+    font-size: 1.1rem;
+  }
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#tabla td {
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.1;
+  font-size: 1.3rem;
+}
+
+#tabla .data,
+#tabla h3,
+#tabla h4 {
+  font-size: 1.3rem;
+}
+
+#tabla td {
+  padding: 0%;
+}
+
+#tabla p {
+  font-weight: bold;
+}
+
+.temp-value {
+  font-size: 6rem;
+}
+
+.data {
+  font-size: 1.5rem;
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+}
+
+.temperature {
+  text-align: center;
+  line-height: 1;
+}
